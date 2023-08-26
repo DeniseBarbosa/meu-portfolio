@@ -1,22 +1,23 @@
 /* Neste trecho de código CSS, uma regra @media está sendo usada para aplicar estilos somente quando a tela tiver uma largura máxima de 1200 pixels. Quando essa condição é atendida: */
 /* Estilos para telas com largura máxima de 1200px */
-@media screen and (max-width: 1400px) {
-  #perfil{
+
+/* @media screen and (max-width: 1400px) {
+  #perfil {
     height: 83vh;
     margin-bottom: 6rem;
   }
-  .sobre-containers{
+  .sobre-containers {
     flex-wrap: wrap;
   }
-}
+} */
 @media screen and (max-width: 1200px) {
-  #desktop-nav{
+  #desktop-nav {
     display: none; /* Oculta o elemento com ID desktop-nav */
   }
-  #hamburger-nav{
+  #hamburger-nav {
     display: flex; /* Exibe o elemento com ID hamburger-nav */
   }
-  #experiencia, .experiencia-detalhes-container{
+  #experiencia, .experiencia-detalhes-container {
     margin-top: 2rem;
   }
   #perfil, .secao-container{
@@ -28,10 +29,10 @@
   section, .secao-container{
       height: fit-content;
   }
-  section{
+  section {
     margin: 0 5%;
   }
-  .secao__fot-container{
+  .secao__fot-container {
     width: 275px;
     height: 275px;
     margin:  0 auto 2rem;
@@ -41,14 +42,14 @@
   }
 }
 @media screen and (max-width: 600px){
-  #contatos, footer{
+  #contatos, footer {
     height: 40vh;
   }
-  #perfil{
+  #perfil {
     height: 83vh;
     margin-bottom: 0;
   }
-  article{
+  article {
     font-size: 1rem;
   }
   footer nav{
