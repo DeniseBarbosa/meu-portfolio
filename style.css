@@ -1,0 +1,62 @@
+/* GERAL  */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+/* Isso permitirá que a rolagem ocorra suavemente até cada seção */
+html{
+  scroll-behavior: smooth;
+}
+/* Define a cor do texto para um tom de cinza escuro (#555) */
+p{
+  color: rgb(85, 85, 85);
+}
+/* Aplica uma transição suave de 300ms a todos os elementos com a classe .btn */
+a, .btn{
+  transition: all 300ms ease;
+}
+/* ---------------------------------------------------------------------------- */
+/* Desktop navegação  */
+/* Aplica uma exibição flexível tanto a elementos <nav> quanto a elementos com a classe .nav-links */
+/* Isso significa que eles ficarão um ao lado do outro, horizontalmente.
+Isso é útil para criar menus de navegação, barras de menu ou qualquer outro tipo de layout onde os elementos precisem ficar alinhados horizontalmente.
+ */
+nav, 
+.nav-links {
+  display: flex;
+}
+nav{
+  justify-content: space-around; /* Distribuição equidistante dos elementos ao redor do espaço disponível */
+  align-items: center; /* Centraliza os elementos verticalmente */
+  height: 17vh; /* Define a altura como 17% da altura da viewport */
+}
+
+.nav-links{
+  gap: 2rem; /* Espaçamento entre os elementos da lista */
+  list-style: none; /* Remoção dos marcadores de lista */
+  font-size: 1.5rem; /* Tamanho da fonte */
+}
+
+a{
+  color: black; /* Cor do texto do link */
+  text-decoration: none; /* Remoção do sublinhado padrão */
+  text-decoration-color: white; /* Cor do sublinhado quando houver */
+}
+a:hover{
+  color: #d30f59;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(211, 15, 89);
+}
+.logo{
+  font-size: 2rem;
+}
+.logo:hover{
+  cursor: default;
+}
