@@ -1,0 +1,10 @@
+/* Neste trecho de código CSS, uma regra @media está sendo usada para aplicar estilos somente quando a tela tiver uma largura máxima de 1200 pixels. Quando essa condição é atendida: */
+/* Estilos para telas com largura máxima de 1200px */
+@media screen and (max-width: 1200px) {
+  #desktop-nav{
+    display: none; /* Oculta o elemento com ID desktop-nav */
+  }
+  #hamburger-nav{
+    display: flex; /* Exibe o elemento com ID hamburger-nav */
+  }
+}

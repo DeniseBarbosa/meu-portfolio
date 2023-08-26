@@ -60,3 +60,77 @@ a:hover{
 .logo:hover{
   cursor: default;
 }
+/* ---------------------------------------------------------------------------------------*/
+/* SEÇÃO MOVEL HAMBURGER MENU  */
+#hamburger-nav{
+  display: none; /* Oculta o elemento com o ID #hamburger-nav útil, por exemplo, para esconder um menu de navegação responsivo (como um menu de hambúrguer) em telas maiores onde ele não é necessário. */
+}
+.hamburger-menu{
+  position: relative; /* Posição relativa para posicionamento flexível */
+  display: inline-block; /* Exibição como bloco em linha */
+}
+.hamburger-icon{
+  display: flex; /* Exibição flexível para alinhar itens verticalmente */
+  flex-direction: column; /* Itens dispostos em coluna */
+  justify-content: space-between; /* Espaço uniformemente distribuído entre os itens */
+  height: 24px; /* Altura do ícone */
+  width: 30px; /* Largura do ícone */
+  cursor: pointer; /* Cursor do mouse alterado para indicar que é clicável */
+}
+.hamburger-icon span{
+  width: 100%; /* Largura de 100% */
+  height: 2px; /* Altura de 2 pixels */
+  background-color: black; /* Cor de fundo preta */
+  transition: all 0.3s ease-in-out; /* Transição suave de propriedades */
+
+  /* as três linhas horizontais são representadas como elementos <span> dentro de um elemento com a classe .hamburger-icon. O CSS aplica as propriedades necessárias para criar essa aparência de ícone de hambúrguer com três tracinhos. */
+
+
+}
+.menu-links{
+  position: absolute; /* Posicionamento absoluto */
+  top: 100%; /* Posicionamento abaixo do elemento pai */
+  right: 0; /* Alinhamento à direita */
+  background-color: white; /* Cor de fundo branca */
+  width: fit-content; /* Largura ajustada ao conteúdo */
+  max-height: 0; /* Altura máxima inicial de 0 (oculto) */
+  overflow: hidden; /* Oculta o conteúdo que ultrapassa a altura */
+  transition: all 0.3s ease-in-out; /* Transição suave de propriedades */
+}
+.menu-links a{
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+.menu-links li{
+  list-style: none;
+}
+.menu-links.aberto{
+  max-height: 300px;
+}
+/* Estilos para o primeiro filho <span> dentro de elementos com as classes .hamburger-icon e .aberto */
+.hamburger-icon.aberto span:first-child{
+  transform: rotate(45deg) translate(10px, 5px) ;
+  /* Isso aplica duas transformações ao elemento. Primeiro, ele é rotacionado em 45 graus no sentido horário. Em seguida, é movido horizontalmente 10 pixels e verticalmente 5 pixels. Isso é comum em animações de ícones de hambúrguer, onde o ícone se transforma em uma forma de "X" quando o menu está aberto, indicando que o usuário pode fechá-lo. */
+}
+.hamburger-icon.aberto span:nth-child(2){
+  opacity: 0;
+  /* Essa regra aplica a propriedade opacity para tornar o segundo elemento <span> invisível (com opacidade 0). Isso é comum em animações de ícones de hambúrguer, onde o segundo traço do ícone é simplesmente ocultado quando o menu é aberto. */
+}
+.hamburger-icon.aberto span:last-child{
+  transform: rotate(-45deg) translate(10px, -5px) ;
+  /* Esta regra aplica a transformação ao último elemento <span>. Assim como o primeiro traço, ele é rotacionado e movido para formar a outra parte do "X" quando o menu é aberto. */
+}
+.hamburger-icon span:first-child{
+  transform: none;
+}
+.hamburger-icon span:first-child{
+  opacity: 1;
+}
+.hamburger-icon  span:first-child{
+  transform: none;
+}
