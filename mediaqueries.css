@@ -1,10 +1,92 @@
 /* Neste trecho de código CSS, uma regra @media está sendo usada para aplicar estilos somente quando a tela tiver uma largura máxima de 1200 pixels. Quando essa condição é atendida: */
 /* Estilos para telas com largura máxima de 1200px */
+@media screen and (max-width: 1400px) {
+  #perfil{
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .sobre-containers{
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1200px) {
   #desktop-nav{
     display: none; /* Oculta o elemento com ID desktop-nav */
   }
   #hamburger-nav{
     display: flex; /* Exibe o elemento com ID hamburger-nav */
+  }
+  #experiencia, .experiencia-detalhes-container{
+    margin-top: 2rem;
+  }
+  #perfil, .secao-container{
+    display: block;
+  }
+  .arrow{
+    display: none;
+  }
+  section, .secao-container{
+      height: fit-content;
+  }
+  section{
+    margin: 0 5%;
+  }
+  .secao__fot-container{
+    width: 275px;
+    height: 275px;
+    margin:  0 auto 2rem;
+  }
+  .sobre-containers{
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 600px){
+  #contatos, footer{
+    height: 40vh;
+  }
+  #perfil{
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article{
+    font-size: 1rem;
+  }
+  footer nav{
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .sobre-containers, .contato-info-upper-container, .btn-container{
+    flex-wrap: wrap;
+  }
+  .contato-info-container{
+    margin: 0;
+  }
+  .contato-info-container p, .nav-liinks li a{
+    font-size:  1rem;
+  }
+  .experiencia-sub-titulo{
+    font-size: 1.25rem;
+  }
+  .logo{
+    font-size: 1.5rem;
+  }
+  .nav-links{
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .secao__fot-container{
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .secao__texto__p2{
+    font-size: 1.25rem;
+  }
+  .titulo{
+    font-size: 2rem;
+  }
+  .texto-container{
+    text-align: justify;
   }
 }
