@@ -300,3 +300,24 @@ article .icon{
 }
 
 /* Seção Projetos */
+#projetos{
+  position: relative;
+}
+.color-container{
+  border-color: #d30f59;
+  background: white;
+
+}
+.projeto-img{
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+.projeto-titulo{
+  margin: 1rem;
+  color: black;
+}
+.porjeto-btn{
+  color: black;
+  
+}
