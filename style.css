@@ -319,5 +319,41 @@ article .icon{
 }
 .porjeto-btn{
   color: black;
+
+}
+
+/* Contatos  */
+#contatos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+.contato-info-upper-container{
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+   border: white 0.1rem solid;
+  border-color: white;
+  background-color: #d30f59;
+  margin: 2rem auto;
+  padding: 0.5rem;
+
+}
+.contato-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+.contato-info-container p {
+  font-size:  large;
+}
+.contato-icon{
+  cursor: default;
+}
+.email-icon{
+  height: 2.5rem;
   
 }
